@@ -2,7 +2,7 @@
 # shellcheck disable=SC2162
 
 codename=$(lsb_release -c | grep "Codename" | awk '{print $2}')
-moderm_ver="trusty xenial bionic focal jammy lunar mantic noble"
+moderm_ver="trusty xenial bionic focal jammy lunar mantic noble oracular"
 is_moderm=false
 for i in $moderm_ver; do
   if [[ "$codename" == "$i" ]]; then
